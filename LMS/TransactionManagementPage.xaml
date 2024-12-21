@@ -1,0 +1,54 @@
+﻿<Page x:Class="LMS.TransactionManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Transaction Management">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Text="Transaction Management" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,10" />
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Checkout Section -->
+            <GroupBox Header="Checkout Books" Margin="10">
+                <StackPanel>
+                    <TextBox x:Name="PatronNameTextBox" Margin="0,5" Height="30" />
+                    <ListBox x:Name="AvailableBooksListBox" Margin="0,5" Height="150" />
+                    <DatePicker x:Name="CheckoutDatePicker" Margin="0,5" />
+                    <DatePicker x:Name="DueDatePicker" Margin="0,5" />
+                    <Button Content="Checkout Book" Height="30" Margin="0,5" Click="CheckoutBook_Click"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Return Section -->
+            <GroupBox Header="Return Books" Margin="10" Grid.Column="1">
+                <StackPanel>
+                    <ListBox x:Name="CheckedOutBooksListBox" Margin="0,5" Height="150" />
+                    <Button Content="Return Book" Height="30" Margin="0,5" Click="ReturnBook_Click"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Overdue Fees Section -->
+            <GroupBox Header="Overdue Fees" Margin="10" Grid.Column="2">
+                <StackPanel>
+                    <Button Content="View Overdue Fees" Height="30" Margin="0,5" Click="ViewOverdueFees_Click"/>
+                    <DataGrid x:Name="OverdueFeesDataGrid" Margin="0,5" Height="200" AutoGenerateColumns="True" IsReadOnly="True"/>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Page>

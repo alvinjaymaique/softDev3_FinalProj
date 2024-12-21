@@ -1,0 +1,51 @@
+﻿<Page x:Class="LMS.ReportAndAnalyticsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LMS"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ReportAndAnalyticsPage">
+
+    <Grid>
+        <!-- Main Grid Structure -->
+        <TabControl>
+            <TabItem Header="Overdue Books Report">
+                <StackPanel Margin="10">
+                    <!-- Overdue Books DataGrid -->
+                    <DataGrid Name="OverdueBooksDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" />
+                    <!-- Export Button for Overdue Books -->
+                    <Button Name="ExportOverdueBooksButton" Content="Export to PDF/Excel/CSV" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Checked Out Books Report">
+                <StackPanel Margin="10">
+                    <!-- Checked Out Books DataGrid -->
+                    <DataGrid Name="CheckedOutBooksDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" />
+                    <!-- Export Button for Checked Out Books -->
+                    <Button Name="ExportCheckedOutBooksButton" Content="Export to PDF/Excel/CSV" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Transaction History Report">
+                <StackPanel Margin="10">
+                    <!-- Transaction History DataGrid -->
+                    <DataGrid Name="TransactionHistoryDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" />
+                    <!-- Export Button for Transaction History -->
+                    <Button Name="ExportTransactionHistoryButton" Content="Export to PDF/Excel/CSV" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Patron Activity Report">
+                <StackPanel Margin="10">
+                    <!-- Patron Activity DataGrid -->
+                    <DataGrid Name="PatronActivityDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" />
+                    <!-- Export Button for Patron Activity -->
+                    <Button Name="ExportPatronActivityButton" Content="Export to PDF/Excel/CSV" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

@@ -1,0 +1,61 @@
+﻿<Page x:Class="LMS.PatronManagementWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Patron Management">
+    <Grid>
+        <!-- Your Patron Management layout here -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Text="Patron Management System" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10" />
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Patron List -->
+            <GroupBox Header="Patron List" Margin="10">
+                <DataGrid x:Name="PatronDataGrid"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          IsReadOnly="True"
+                          SelectionMode="Single"
+                          Margin="5">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="*"/>
+                        <DataGridTextColumn Header="Membership ID" Binding="{Binding MembershipID}" Width="*"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                        <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}" Width="*"/>
+                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
+                        <DataGridTextColumn Header="Date of Birth" Binding="{Binding DateOfBirth}" Width="*"/>
+                        <DataGridTextColumn Header="Membership Type" Binding="{Binding MembershipType}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+
+            <!-- Actions Panel -->
+            <StackPanel Grid.Column="1" Margin="10">
+                <GroupBox Header="Actions" Margin="0,0,0,10">
+                    <StackPanel Margin="5">
+                        <Button Content="Add New Patron" Margin="0,5" Height="35" Click="AddPatron_Click"/>
+                        <Button Content="Edit Selected Patron" Margin="0,5" Height="35" Click="EditPatron_Click"/>
+                        <Button Content="Delete Selected Patron" Margin="0,5" Height="35" Click="DeletePatron_Click"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Search" Margin="0,10,0,0">
+                    <StackPanel Margin="5">
+                        <TextBox x:Name="SearchTextBox" Margin="0,5" Height="30" />
+                        <Button Content="Search" Height="30" Click="SearchPatron_Click" />
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
