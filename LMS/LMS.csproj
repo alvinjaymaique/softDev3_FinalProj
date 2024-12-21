@@ -55,6 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountManager.cs" />
+    <Compile Include="LoginForm.xaml.cs">
+      <DependentUpon>LoginForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisterForm.xaml.cs">
+      <DependentUpon>LoginRegisterForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.xaml.cs">
+      <DependentUpon>RegisterForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ReportAndAnalyticsPage.xaml.cs">
       <DependentUpon>ReportAndAnalyticsPage.xaml</DependentUpon>
     </Compile>
@@ -78,6 +89,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditPatronWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginRegisterForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,6 +128,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PatronManagementWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegisterForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

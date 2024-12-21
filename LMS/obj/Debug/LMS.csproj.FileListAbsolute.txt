@@ -60,3 +60,9 @@ D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\L
 D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LMS.csproj.CoreCompileInputs.cache
 D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LMS.exe
 D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LMS.pdb
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LoginForm.g.cs
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LoginRegisterForm.g.cs
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\RegisterForm.g.cs
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LoginForm.baml
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\LoginRegisterForm.baml
+D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\obj\Debug\RegisterForm.baml

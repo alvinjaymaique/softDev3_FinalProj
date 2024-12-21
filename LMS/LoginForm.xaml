@@ -1,0 +1,42 @@
+﻿<Page x:Class="LMS.LoginForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LMS"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginForm">
+
+    <Grid>
+        <!-- Define the layout of the login form -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="250">
+
+            <!-- Username TextBox with Placeholder -->
+            <Grid>
+                <TextBox x:Name="UsernameTextBox" Width="250" Margin="0,0,0,10" GotFocus="UsernameTextBox_GotFocus" LostFocus="UsernameTextBox_LostFocus"/>
+                <TextBlock x:Name="UsernamePlaceholder" Text="Enter username" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,10" IsHitTestVisible="False"/>
+            </Grid>
+
+            <!-- Password TextBox with Placeholder -->
+            <Grid>
+                <PasswordBox x:Name="PasswordBox" Width="250" Margin="0,0,0,10" GotFocus="PasswordBox_GotFocus" LostFocus="PasswordBox_LostFocus"/>
+                <TextBlock x:Name="PasswordPlaceholder" Text="Enter password" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,10" IsHitTestVisible="False"/>
+            </Grid>
+
+            <!-- Login Button -->
+            <Button Content="Login" Width="250" Click="LoginButton_Click"/>
+
+            <!-- Optionally, add a message for failed login -->
+            <TextBlock x:Name="ErrorMessageTextBlock" Foreground="Red" Visibility="Collapsed" Margin="0,10,0,0"/>
+
+            <!-- Text for registration link -->
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0">
+                Don't have an account? 
+                <Hyperlink NavigateUri="RegisterForm.xaml" RequestNavigate="Hyperlink_RequestNavigate">
+                    Register now!
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Backup\4th Year 2024-2025\Software Development 3\FinalProject\LMS\App.xaml
-91162712880
+12192050244
 
-131080835202
+181523540621
 13-1310406943
-AddBookWindow.xaml;AddPatronWindow.xaml;BookManagementWindow.xaml;EditBookWindow.xaml;EditPatronWindow.xaml;MainWindow.xaml;PatronManagementWindow.xaml;ReportAndAnalyticsPage.xaml;TransactionManagementPage.xaml;
+AddBookWindow.xaml;AddPatronWindow.xaml;BookManagementWindow.xaml;EditBookWindow.xaml;EditPatronWindow.xaml;LoginForm.xaml;LoginRegisterForm.xaml;MainWindow.xaml;PatronManagementWindow.xaml;RegisterForm.xaml;ReportAndAnalyticsPage.xaml;TransactionManagementPage.xaml;
 
 False
 
